@@ -1,8 +1,8 @@
 name: newmips
 description: |
-  # Description of the Catalog Entry
+  Newmips main application
 version: 0.1
-category: # Category to be used for searching catalog entries
+category: Development
 maintainer: # The maintainer of the catalog entry
 license: # The license
 projectURL: # A URL related to the catalog entry
