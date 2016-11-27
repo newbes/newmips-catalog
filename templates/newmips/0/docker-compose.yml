@@ -1,0 +1,9 @@
+newmips:
+  image: newmips/newmips
+database:
+  image: percona
+  environment:
+    MYSQL_DATABASE: ${mysql_db}
+    MYSQL_USER: ${mysql_user}
+    MYSQL_PASSWORD: ${mysql_password}
+  link: newmips:db
