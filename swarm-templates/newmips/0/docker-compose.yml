@@ -1,5 +1,5 @@
 newmips:
-  image: newmips/newmips
+  image: novanit/newmips
   labels:
     io.rancher.sidekicks: seed
 database:
