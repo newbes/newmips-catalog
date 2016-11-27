@@ -1,7 +1,25 @@
 .catalog:
-  name: # Name of the versioned template of the Catalog Entry
-  version: # Version of the versioned template of the Catalog Entry
-  description: # Description of the versioned template of the Catalog Entry
-  uuid: # Unique identifier to be used for upgrades. Please see note.
-  minimum_rancher_version: # The minimum version of Rancher that supports the template
-  questions: #Used to request user input for configuration options
+  name: "Newmips"
+  version: "v0.1"
+  description: "A painless self-hosted Git service"
+  uuid: gogs-0
+  minimum_rancher_version: v0.51.0
+  questions:
+    - variable: mysql_database
+      description: "mysql database"
+      label: "Mysql Database"
+      required: true
+      default: "newmips"
+      type: "string"
+    - variable: mysql_user
+      description: "mysql user"
+      label: "Mysql User"
+      required: true
+      default: "newmips"
+      type: "string"
+    - variable: mysql_password
+      description: "mysql password"
+      label: "Mysql Password"
+      required: true
+      default: "password"
+      type: "string"
