@@ -21,7 +21,7 @@
       description: "mysql password"
       label: "Mysql Password"
       required: true
-      default: "password"
+      default: "newmips"
       type: "string"
     - variable: mysql_root_password
       description: "mysql root password"
