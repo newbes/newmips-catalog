@@ -1,0 +1,8 @@
+name: percona
+description: |
+  Percona db
+version: 0.1
+category: Development
+maintainer: # The maintainer of the catalog entry
+license: # The license
+projectURL: # A URL related to the catalog entry
