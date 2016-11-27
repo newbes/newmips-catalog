@@ -1,8 +1,18 @@
-percona-seed:
-  image: newmips/percona
-  labels: 
-    io.rancher.scheduler.global: 'true'
-    io.rancher.scheduler.affinity:host_label: traefik_lb=true
-    io.rancher.scheduler.affinity:container_label_ne: io.rancher.stack_service.name=$${stack_name}/$${service_name}
-  tty: true
-  log_opt: {}
+newmips:
+  image: newmips/newmips
+  labels:
+    io.rancher.sidekicks: seed
+database:
+  image: percona
+  environment:
+    MYSQL_DATABASE: ${mysql_db}
+    MYSQL_USER: ${mysql_user}
+    MYSQL_PASSWORD: ${mysql_password}
+  link: newmips:db
+  volumes_from:
+    - seed
+seed:
+  image: novanit/newmips-db-seed
+  labels:
+    io.rancher.container.start_once: 'true'
+
