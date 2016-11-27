@@ -23,3 +23,9 @@
       required: true
       default: "password"
       type: "string"
+    - variable: mysql_root_password
+      description: "mysql root password"
+      label: "Mysql Root Password"
+      required: true
+      default: "p@ssw0rd"
+      type: "string"
