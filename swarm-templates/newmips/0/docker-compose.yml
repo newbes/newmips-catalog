@@ -4,6 +4,8 @@ newmips:
     io.rancher.sidekicks: seed
   links: 
     - database:db
+  ports:
+    - 1337:1337
 database:
   image: percona
   environment:
