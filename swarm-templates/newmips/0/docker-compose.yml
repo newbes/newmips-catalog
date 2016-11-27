@@ -2,7 +2,8 @@ newmips:
   image: novanit/newmips
   labels:
     io.rancher.sidekicks: seed
-  links: database:db
+  links: 
+    - database:db
 database:
   image: percona
   environment:
