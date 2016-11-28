@@ -1,12 +1,12 @@
 .catalog:
-  name: "Newmips"
+  name: Newmips
   version: "v0.1"
-  description: "A painless self-hosted Git service"
-  uuid: gogs-0
+  description: "Newmips Application"
+  uuid: newmips-0
   minimum_rancher_version: v0.51.0
   questions:
     - variable: mysql_database
-      description: "mysql database"
+      description: "Database Name"
       label: "Mysql Database"
       required: true
       default: "newmips"
